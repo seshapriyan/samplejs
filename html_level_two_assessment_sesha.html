@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Course Sign-up Page</title>
+</head>
+<body>
+    <h1>Course Sign Up Page</h1>
+    <form action="basics.html" method="GET">
+        <p>Please note: Firstname, Lastname, Email and Password are required fields</p>
+    
+        <label for="firstname">Enter your first name :</label>
+        <input id="firstname" type="text" name="fname" placeholder="First Name" required>
+    
+        <label for="lastname">Enter your last name :</label>
+        <input id="lastname" type="text" name="lname" placeholder="Last Name" required>
+    
+        <p>
+        <label for="email">Enter your email address :</label>
+        <input id="email" type="email" name="emailaddress" placeholder="Email" required>
+    
+        <label for="password">Enter your password :</label>
+        <input id="password" type="password" name="passwd" required>
+        </p>
+        
+        <p>Are you over 18 years of age?</p>
+        <label for="above18">Yes</label>
+        <input type="radio" name="above18radio" id="above18Yes" value="Yes">
+        <label for="above18">No</label>
+        <input type="radio" name="above18radio" id="above18No" value="No">
+
+        <p>Do you have a Credit Card or Paypal?</p>
+        <label for="dropdownccorpp"></label>
+        <select name="cc_or_pp" id="dropdownccorpp">
+            <option value="cc">Credit Card</option>
+            <option value="pp">Pay Pal</option>
+        </select>
+        
+        <p>
+        <input type="submit" value="Sign Up">
+        </p>
+    </form>
+</body>
+</html>
